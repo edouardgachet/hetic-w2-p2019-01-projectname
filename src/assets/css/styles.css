@@ -1,0 +1,17 @@
+.menu * {
+  color: red; }
+
+header {
+  background: #fff; }
+
+nav {
+  font-size: 14px; }
+
+p {
+  color: red; }
+
+br {
+  color: yellow; }
+
+.nav {
+  width: 200px; }
