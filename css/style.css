@@ -1,0 +1,382 @@
+@font-face {
+    font-family: "Futura";
+    src: url('../font/futura.ttf');
+}
+
+@font-face {
+    font-family: "Courier";
+    src: url('../font/courier.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Courier";
+    margin: 0;
+}
+
+header {
+    height: 85vh;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 120px;
+}
+
+nav .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .links ul li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header nav .links ul li a {
+    color: #fff;
+}
+
+nav .links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7rem;
+}
+
+nav .burger-icon {
+    display: none;
+}
+
+nav .burger-icon img {
+    width: 30px;
+}
+
+header .baseline {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 110px 110px;
+}
+
+header .baseline p {
+    font-family: "Futura";
+    font-size: 6rem;
+    margin: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: inline-block;
+    margin-top: 7px;
+    padding: 3px;
+}
+
+section.full-skate {
+    padding: 45px 10%;
+}
+
+section.full-skate h1 {
+    font-family: "Futura";
+    font-size: 6rem;
+    margin: 0 0 20px 0;
+}
+
+section.full-skate .description p {
+    line-height: 1.4em;
+    width: 60%;
+}
+
+section.full-skate .skate-img {
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.full-skate .skate-img .image {
+    width: 30%;
+}
+
+section.full-skate .skate-img .text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+section.full-skate .skate-img .image img {
+    width: 100%;
+}
+
+section.full-skate .skate-img p {
+    margin: 0;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section.big-img {
+    width: 100%;
+}
+
+section.big-img img {
+    width: 100%;
+}
+
+section.split-skate {
+    padding: 45px 10%;
+    display: flex;
+}
+
+section.split-skate .image {
+    width: 100%;
+}
+
+section.split-skate .image img {
+    width: 100%;
+}
+
+section.split-skate .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+section.split-skate .description p {
+    width: 70%;
+    margin-top: 25px;
+}
+
+.red-link {
+    background-color: #FE0000;
+    color: #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 35px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .image {
+    text-align: center;
+}
+
+footer img {
+    width: 110px;
+}
+
+
+
+
+
+
+section.akira-description {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.akira-description .text, section.akira-description .image {
+    width: 50%;
+}
+
+section.akira-description .image img {
+    width: 100%;
+}
+
+section.akira-description .text p {
+    width: 80%;
+    line-height: 1.4em;
+}
+
+section.akira-description h1 {
+    font-family: "Futura";
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+section.akira-description .text .buttons {
+    margin-top: 30px;
+}
+
+section.akira-description .text .buttons a {
+    text-decoration: none;
+    padding: 3px 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+section.akira-description .text .buttons a:nth-child(1) {
+    color: #000;
+    border: 2px solid #000;
+}
+
+section.akira-description .text .buttons a:nth-child(2) {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+section.akira-description .text .buttons a:nth-child(3) {
+    color: #fff;
+    background-color: #FE0000;
+    border: 2px solid #FE0000;
+}
+
+section.gallery {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.gallery div {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+section.gallery div img {
+    width: 100%;
+}
+
+
+@media all and (max-width: 1100px) {
+    section.akira-description .text, section.akira-description .image {
+        width: 100%;
+    }
+    
+    section.akira-description .text {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    nav {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    
+    nav .links ul {
+        display: none;
+    }
+    
+    nav .burger-icon {
+        display: block;
+    }
+    
+    section.akira-description h1 {
+        font-size: 3rem;
+    }
+    
+    section.akira-description .text p {
+        width: 100%;
+    }
+    
+    section.akira-description .text .buttons a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    footer ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    header .baseline p {
+        font-size: 2.5rem;
+    }
+    
+    header .baseline {
+        margin: 0 0 20px 20px;
+    }
+    
+    section.full-skate h1 {
+        font-size: 3rem;
+    }
+    
+    section.full-skate .description p {
+        width: 100%;
+    }
+    
+    section.full-skate {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    section.full-skate .skate-img .image {
+        width: 100%;
+    }
+    
+    section.full-skate .skate-img {
+        flex-direction: column-reverse;
+    }
+    
+    section.full-skate .skate-img p {
+        padding: 0;
+        text-align: left;
+    }
+    
+    section.split-skate {
+        flex-direction: column;
+        padding: 45px 15px;
+    }
+    
+    section.split-skate .description {
+        margin-top: 40px;
+        padding: 0;
+    }
+    
+    section.split-skate .description div {
+        text-align: center;
+    }
+    
+    section.split-skate .description p {
+        width: 100%;
+    }
+}
